@@ -195,6 +195,7 @@ metadata:
     kubernetes.digitalocean.com/load-balancer-id: "dns"
     service.beta.kubernetes.io/do-loadbalancer-size-unit: "2"
     service.beta.kubernetes.io/do-loadbalancer-disable-lets-encrypt-dns-records: "false"
+    #metallb.universe.tf/allow-shared-ip: dns
 spec:
   selector:
     app: pihole-default

@@ -1,0 +1,1 @@
+docker run -d --name pihole -e ServerIP=192.168.1.199 -e WEBPASSWORD=Letmein1! -e TZ=US/Central -e DNS1=1.1.1.1 -p 80:80 -v pihole_app:/etc/pihole -v dns_config:/etc/dnsmasq.d -p 53:53/tcp -p 53:53/udp -p 443:443 --restart=unless-stopped pihole/pihole:latest
